@@ -1,0 +1,266 @@
+/*
+Theme name: Strips
+Theme URI: http://ashryanbeats.com
+Description: This is a WordPress theme intended to focus simply on photos and words, made with love.
+Author: Ash Ryan
+Author URI: http://ashryanbeats.com
+Version: 0.54
+*/
+@import url('bootstrap/css/bootstrap.css'); 
+
+/*highlights the current menu item*/
+.menu-item {
+	background-color: #f1f1f1;
+	border-radius: 2px;
+}
+.current-menu-item {
+	background-color: #e7e7e7;
+}
+
+/*makes images responsive*/
+img, .entry img, .comment-content img, .widget img, .wp-caption {
+	display: block;
+	height: auto;
+	max-width: 100%;	
+}
+/*this makes in-post images align as expected in WordPress*/
+img.centered, .aligncenter, div.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+/*style the caption of the featured image and in-post images. note: in-post images are assigned .wp-caption-text by wordpress*/
+.feat-caption, .wp-caption-text {
+	font-style: oblique;
+	color: gray;
+	padding: 2px 0px 10px 0px;
+	display: block;
+}
+.feat-caption {
+	text-align: center;
+}
+/*border on in-post images*/
+.size-medium, .size-full, .size-thumbnail {
+	padding: 20px;
+	border: 1px solid lightgray;
+	border-radius: 2px;
+	box-shadow: 1px 1px 3px #999;
+}
+/*puts some space between the blog-thumb and the next element*/
+.attachment-blog-thumb {
+	margin-bottom: 5px;
+}
+.attachment-page-thumb {
+	float: right;
+	margin-left: 20px;
+	width: 20%;
+}
+
+
+/*links*/
+a {
+ 	color: #ff56aa;
+ 	text-decoration: none;
+} 
+a:hover, a:focus {
+	color: #2a6496;
+	text-decoration: none;
+}
+
+/*font setting*/
+h1, h2, h3, h4, h5, h6, h7, .read-more, .archive-link-container, .navbar-brand {
+	font-family: 'Orbitron';
+}
+h1, .navbar-brand {
+	font-size: 30px;
+}
+.navbar-brand {
+	color: #ff56aa;
+	padding: 15px 15px;
+	font-weight: 500;
+}
+/*make the title font smaller on smaller devices to fit with the collapse menu icon*/
+@media (max-width: 767px) {
+	.navbar-brand {
+		font-size: 26px;
+	}
+}
+/*turns the collapse menu glyphicon gray*/
+.gray {
+	color: gray;
+}
+
+/*makes the navbar left align with the content, devices larger than iphone*/
+@media (min-width: 768px) {
+  .navbar > .container .navbar-brand,
+  .navbar > .container-fluid .navbar-brand {
+    margin-left: -15px;
+  }
+}
+/*iphone*/
+@media (max-width: 767px) {
+	.navbar > .container .navbar-brand {
+		margin-left: -10px;
+	}
+}
+
+.navbar {
+	padding: 10px 10px;
+	margin-bottom: 0;
+}
+
+/*margin around the pills in navbar*/
+@media (min-width: 768px) {
+	.navbar-nav > li {
+		margin: 3px 2px 10px 0px;
+	}
+}
+.navbar-nav > li > a {
+	padding: 10px 15px;
+}
+
+span.glyphicon-collapse-down {
+    font-size: 30px;
+}
+.navbar-toggle {
+	margin: 0;
+	padding: 5px;
+}
+
+
+/*footer*/
+#footer {
+	background-color: #e7e7e7;
+	color: gray;
+	margin-top: 30px;
+	margin-bottom: 0px;
+	padding-top: 10px;
+	padding-bottom: 40px;
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px;
+}
+/*sets padding for footer sidebars*/
+#footer > .col-md-6, #footer > .col-md-10 {
+	padding-left: 0;
+	padding-bottom: 20px;
+}
+
+/*styling for categories and dates*/
+.catpill, .cat-item {
+	display: inline-block;	
+	color: white;
+	font-size: 0.8em;
+	font-style: oblique;
+	background-color: gray;
+	padding: 3px 5px 3px 5px;
+	border-radius: 2px;
+	margin-right: 5px;
+	margin-bottom: 7px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#archive-well-title .catpill {
+	vertical-align: middle;
+}
+/* styles links under class catpill */
+.catpill a, .cat-item a {
+	color: white;
+}
+
+hr {
+	width: 50%;
+	border-color: gray;
+}
+
+
+/*for the archive notice */
+#archive-well-title {
+	display: inline-block;
+	vertical-align: middle;
+}
+#archive-well-title > .catpill {
+	vertical-align: middle;
+}
+.well-archive {
+	margin-top: 10px;
+	margin-bottom: 0px;
+	padding: 5px 10px 5px 10px;
+	border-radius: 2px;
+	width: auto;
+}
+.archive-well-list {
+	list-style: none;
+	padding-left: 0;
+}
+
+/* =Menu ----------------------------------------------- */
+.navbar {
+	border-radius: 0;
+}
+
+
+/*styles blockquote and cites which usually used within blockquote*/
+blockquote {
+	font-size: inherit;
+	border-left: 5px solid #e7e7e7;
+	width: 85%;
+	padding: 0px 0px 0px 15px;
+	margin: 0 0 20px 3%;
+}
+cite {
+	font-style: italic;
+}
+/*class for book titles*/
+.work-title {
+	font-style: italic;
+}
+
+/*code-related styling*/
+code, pre {
+	font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+code {
+	color: black;
+	background-color: #f5f5f5;
+	border-radius: 2px;
+}
+pre {
+	line-height: normal;
+	padding: 0px 9.5px 9.5px 9.5px;
+	border-radius: 2px;
+}
+
+
+/*wrap for long words in post titles*/
+h2 {
+	word-wrap: break-word;
+    -webkit-hyphens: auto;  
+    -moz-hyphens: auto;  
+    -ms-hyphens: auto;
+    hyphens: auto;  
+}
+
+/*styles the container for the Browse the Archives link*/
+.archive-link-container {
+	text-align: center;
+	margin-top: 10px;
+}
+
+#sidebar-column {
+	position: fixed;
+}
+
+
+
+/* jetpack related posts */
+.jp-relatedposts-headline {
+	font-family: 'Orbitron';
+}
+.jp-relatedposts-post-title {
+	font-family: 'Orbitron';
+}
+.jp-relatedposts-post-title > a {
+	text-decoration: none;
+}
+.jp-relatedposts-post-title > a:hover, .jp-relatedposts-post-title > a:focus {
+	text-decoration: none;
+}
