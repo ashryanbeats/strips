@@ -10,7 +10,7 @@
 				<div id="footer" class="col-sm-12 col-md-10">
 					<!-- footer widget -->
 					<?php if (is_active_sidebar('footer2')) : ?>
-						<div class="col-sm-6">
+						<div class="col-sm-6" id="footer-widget-1">
 					<?php else : ?>
 						<div class="col-md-12">
 					<?php endif ?>	
@@ -18,10 +18,17 @@
 						</div>
 						
 					<?php if (is_active_sidebar('footer2')) : ?>
-						<div class="col-sm-6">
+						<div class="col-sm-6" id="footer-widget-2">
 							<?php dynamic_sidebar('footer2') ?>
 						</div>
-					<?php endif ?>	
+					<?php endif ?>
+					
+						<div class="col-sm-12" id="copy">
+							<small>
+								<p>Strips theme for WordPress by Ash Ryan, currently in development.</p>
+								<p><?php echo '©2010 – '.date("Y"). ' <a href="http://ashryanbeats.com">Ash Ryan Beats</a>' ?></p>
+							</small>
+						</div>
 				</div> <!-- closes footer column -->
 			</div> <!-- closes footer row -->
 		</div> <!-- closes container from header.php -->
