@@ -2,7 +2,7 @@
 	
 				<!-- sidebar -->
 				<?php locate_template('strips-show-sidebar.php', true, false) ?>		
-	
+				
 			</div> <!-- closes .row, header.php -->
 
 			<!-- footer begins -->
