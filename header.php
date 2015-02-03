@@ -16,31 +16,34 @@
 <body <?php body_class() ?>>
 	<nav class="navbar navbar-static-top">
 		<div class="container">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-    				<span class="glyphicon glyphicon-collapse-down gray"></span>
-  				</button> 
-  				<a href="<?php echo home_url() ?>" class="navbar-brand"><?php bloginfo('name') ?></a>
-			</div>
-
-			<?php
-	            wp_nav_menu( array(
-	                'menu'              => 'main',
-	                'theme_location'    => 'main',
-	                'depth'             => 2,
-	                'container'         => 'div',
-	                'container_class'   => 'collapse navbar-collapse',
-	                'container_id'		=> 'myNavbar',
-	                'menu_class'        => 'nav navbar-nav',
-	                'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
-	                'walker'            => new wp_bootstrap_navwalker())
-	            );
-	        ?>		
+			<div class="row">
+				<div class="col-sm-11 col-sm-offset-1">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+		    				<span class="glyphicon glyphicon-collapse-down gray"></span>
+		  				</button> 
+		  				<a href="<?php echo home_url() ?>" class="navbar-brand"><?php bloginfo('name') ?></a>
+					</div>
+					<?php
+			            wp_nav_menu( array(
+			                'menu'              => 'main',
+			                'theme_location'    => 'main',
+			                'depth'             => 2,
+			                'container'         => 'div',
+			                'container_class'   => 'collapse navbar-collapse',
+			                'container_id'		=> 'myNavbar',
+			                'menu_class'        => 'nav navbar-nav',
+			                'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+			                'walker'            => new wp_bootstrap_navwalker())
+			            );
+			        ?>	
+				</div>
+			</div>	
         </div>
 	</nav>
 	
 	<div class="container">		
 		<div class="row">
 			<!-- main content column -->
-			<div class="col-md-10">
+			<div class="col-sm-8 col-sm-offset-1">
 
