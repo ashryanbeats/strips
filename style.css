@@ -8,6 +8,12 @@ Version: 0.54
 */
 @import url('bootstrap/css/bootstrap.css'); 
 
+.container {
+	width: 100%;
+	margin-left: 0;
+	margin-right: 0;
+}
+
 /*highlights the current menu item*/
 .menu-item {
 	background-color: #f1f1f1;

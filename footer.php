@@ -7,7 +7,7 @@
 
 			<!-- footer begins -->
 			<div class="row"> <!-- the row itself is full-width, but the class below will set the limit of what's in #footer, including background color -->
-				<div id="footer" class="col-sm-12 col-md-10">
+				<div id="footer" class="col-sm-12">
 					<!-- footer widget -->
 					<?php if (is_active_sidebar('footer2')) : ?>
 						<div class="col-sm-6" id="footer-widget-1">
