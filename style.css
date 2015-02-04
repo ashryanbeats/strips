@@ -6,7 +6,7 @@ Author: Ash Ryan
 Author URI: http://ashryanbeats.com
 Version: 0.54
 */
-@import url('bootstrap/css/bootstrap.css'); 
+@import url('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css'); 
 
 .container {
 	width: 100%;
