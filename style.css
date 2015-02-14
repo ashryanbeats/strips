@@ -13,6 +13,9 @@ Version: 0.54
 	margin-left: 0;
 	margin-right: 0;
 }
+.row {
+
+}
 
 /*highlights the current menu item*/
 .menu-item {
@@ -147,9 +150,8 @@ span.glyphicon-collapse-down {
 	border-top-right-radius: 2px;
 }
 /*sets padding for footer sidebars*/
-#footer > .col-md-6, #footer > .col-md-10 {
-	padding-left: 0;
-	padding-bottom: 20px;
+#footer > div {
+	padding: 0;
 }
 
 /*styling for categories and dates*/
