@@ -25,8 +25,8 @@
 					
 						<div class="col-sm-10 col-sm-offset-1" id="copy">
 							<small>
-								<p>Strips theme for WordPress by Ash Ryan, currently in development.</p>
-								<p><?php echo '©2010 – '.date("Y"). ' <a href="http://ashryanbeats.com">Ash Ryan Beats</a>' ?></p>
+								<p><a href="https://github.com/ashryanbeats/strips">Strips theme for WordPress</a> made with ア! by <a href="http://ashryanbeats.com">Ash Ryan Beats</a>.</p>
+								<p><?php echo '©2010 – '.date("Y"). ' <a href="http://ashryanbeats.com">Ash Ryan Beats</a>' ?>.</p>
 							</small>
 						</div>
 				</div> <!-- closes footer column -->
