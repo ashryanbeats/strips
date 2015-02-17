@@ -32,6 +32,7 @@
 				</div> <!-- closes footer column -->
 			</div> <!-- closes footer row -->
 		</div> <!-- closes container from header.php -->
+		</div> <!-- closes #main-container from header.php -->
 	<?php wp_footer() ?>
 
 </body>

@@ -8,13 +8,25 @@ Version: 0.54
 */
 @import url('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css'); 
 
+html, body {
+	margin:0;
+	padding:0;
+	height:100%;
+}
+
+#main-container {
+   min-height:100%;
+   position:relative;
+}
+
 .container {
 	width: 100%;
 	margin-left: 0;
 	margin-right: 0;
 }
-.row {
 
+#body-content {
+	margin-bottom: 220px;
 }
 
 /*highlights the current menu item*/
@@ -142,12 +154,11 @@ span.glyphicon-collapse-down {
 #footer {
 	background-color: #e7e7e7;
 	color: gray;
-	margin-top: 30px;
-	margin-bottom: 0px;
 	padding-top: 10px;
 	padding-bottom: 40px;
-	border-top-left-radius: 2px;
-	border-top-right-radius: 2px;
+	position: absolute;
+	bottom: 0;
+	height: 200px;
 }
 /*sets padding for footer sidebars*/
 #footer > div {

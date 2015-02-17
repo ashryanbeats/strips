@@ -14,6 +14,7 @@
 </head>
 
 <body <?php body_class() ?>>
+	<div id="main-container">
 	<nav class="navbar navbar-static-top">
 		<div class="container">
 			<div class="row">
@@ -43,6 +44,6 @@
 	</nav>
 	
 	<div class="container">		
-		<div class="row">
+		<div class="row" id="body-content">
 			<div class="col-sm-8 col-sm-offset-1"> <!-- main content column -->
 
