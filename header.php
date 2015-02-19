@@ -4,7 +4,7 @@
 	<meta charset="<?php bloginfo('charset') ?>"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="pingback" href="<?php bloginfo('pingback_url') ?>"/>
-	<title><?php bloginfo('name')?> <?php wp_title() ?></title>
+	<title><?php wp_title() ?></title>
 	<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_uri() ?>" media="all">
 	<link href='http://fonts.googleapis.com/css?family=Orbitron:400,500,700,900' rel='stylesheet' type='text/css'>
 	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
