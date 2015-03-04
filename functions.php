@@ -171,5 +171,8 @@
 	
 	remove_filter('get_the_excerpt', 'wp_trim_excerpt');
 	add_filter('get_the_excerpt', 'wpse_custom_wp_trim_excerpt'); 
+	
+	// Don't automatically check Jetpack Publicize boxes
+	add_filter( 'publicize_checkbox_default', '__return_false' );
 
 ?>
